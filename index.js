@@ -20,9 +20,7 @@ connectDB();
 const app = express();
 app.use(
   cors({
-    origin: [
-      "https://frontend-amber-ten-88.vercel.app",
-    ],
+    origin: true,
     credentials: true,
   })
 );
